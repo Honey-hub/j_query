@@ -1,0 +1,38 @@
+<html>
+
+<head>
+
+  <title> My jquery Page</title>
+</head>
+
+<style>
+p{
+color: darkorchid;
+font-family: sans-serif;
+font-size: medium;
+}
+
+</style>
+
+<body>
+    <h1 id='heading'> Hello world </h1>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+
+
+  <script>
+
+
+    let Inputfromuser = prompt("enter a new heading");
+    $("#Heading").text(Inputfromuser)
+    let time = 1000;
+    for (q = 0; q < 10; q++) {
+      $('h1').fadeOut(time).fadeIn(time);
+      time = 1000 + time;
+    }
+  </script>
+
+
+</body>
+
+</html>

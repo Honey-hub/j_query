@@ -1,0 +1,44 @@
+<html>
+<head>
+
+    <title> My jquery Page</title>
+</head>
+<body>
+
+<h1 id='headingElement'>  Activity </h1>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+
+ <script>
+
+ $('#headingElement').text('My new heading from j query');
+
+   let Inputfromuser=prompt("Please enter a new heading");
+   
+   $(' #headingElement').text(Inputfromuser);
+
+
+   $('body').append('<p> This is a new paragraph </p> ')
+    for (let i=0;i<5;i++) {
+         let hobby=prompt('Enter your hobby');
+         $('body').append('<p>' + hobby + '</p>' )
+    }
+
+
+    $('h1').fadeOut(2000).fadeIn(2000); 
+    
+    for (let i=0;i<5;i++) 
+    
+   $('h1').slideUp(2000).slideDown(2000);
+ 
+ 
+ </script>
+  
+
+</body>
+
+</html>

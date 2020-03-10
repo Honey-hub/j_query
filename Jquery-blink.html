@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+</head>
+<style>
+    p{
+        color:blue;
+        font-family: monospace;
+        font-size: large;
+    }
+    h1{
+        color:darkgreen
+    }
+</style>
+<body>
+    <h1 id='heading'>Blink Page!</h1>
+    <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        let Inputfromuser = prompt("Give a heading to your page.");
+        $("#heading").text(Inputfromuser);
+        let friends = ['Jasveer', 'Prabh', 'Honey'];
+        for (i = 0; i < friends.length; i++) {
+            $('body').append('<p>' + friends[i] + '</p>');
+        }
+        for (i = 0; i < 10; i++) {
+          $('h1').fadeIn(3000).fadeOut(3000);
+        }
+        $("p").hide(1000);$("p").hide(1000);
+            $('p').fadeIn(3000);
+        $('p').fadeIn(3000);
+        $('p').append(' ' + 'smells!');
+    </script>
+</body>
